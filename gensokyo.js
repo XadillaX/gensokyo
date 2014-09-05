@@ -10,6 +10,8 @@ var argv = optimist.usage("Start a certain gensokyo service of `huaban.com`.\nUs
     demand("c").
     string("c").
     alias("c", "class").
+    string("i").
+    alias("i", "id").
     string("l").
     alias("l", "logpath").
     string("v").
@@ -28,8 +30,11 @@ var argv = optimist.usage("Start a certain gensokyo service of `huaban.com`.\nUs
 
 // find which type this service belongs to via ID
 var serverClass = argv.c;
-var type = null;
 var option = null;
+
+if(!argv.i) {
+    argv.i = argv.c;
+}
 
 /**
  * server config format:
@@ -43,6 +48,8 @@ for(var key in config.servers) {
     if(key === serverClass) {
         option = Object.clone(config.servers[key], true);
         option.class = key;
+        option.id = argv.i;
+        break;
     }
 }
 

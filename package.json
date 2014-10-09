@@ -1,23 +1,25 @@
 {
   "name": "gensokyo",
   "version": "0.0.1",
-  "description": "The services wrapper for huaban.com.",
-  "main": "gensokyo.js",
+  "description": "Gensokyo is the driver of services in HB.",
+  "main": "index.js",
   "dependencies": {
     "async": "~0.9.0",
-    "illyria-pre": "~1.0.8-dev",
-    "log4js": "~0.6.15",
-    "optimist": "~0.6.1",
+    "log4js": "~0.6.21",
+    "illyria": "~1.0.9",
     "sugar": "~1.4.1",
-    "walk": "~2.3.3"
+    "walk": "~2.3.4"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "ssh://gitlab@gitlab.widget-inc.com:65422/huaban/gensokyo.git"
+  },
   "keywords": [
     "gensokyo",
-    "touhou",
     "service"
   ],
   "author": "XadillaX",

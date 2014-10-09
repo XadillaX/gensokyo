@@ -8,7 +8,9 @@
     "log4js": "~0.6.21",
     "illyria": "~1.0.9",
     "sugar": "~1.4.1",
-    "walk": "~2.3.4"
+    "walk": "~2.3.4",
+    "nomnom": "~1.8.0",
+    "sync-runner": "~0.0.5-fixwin"
   },
   "devDependencies": {},
   "scripts": {
@@ -23,5 +25,9 @@
     "service"
   ],
   "author": "XadillaX",
-  "license": "Private"
+  "license": "Private",
+  "available": "6c72f6499",
+  "bin": {
+    "gensokyo": "bin/gensokyo.js"
+  }
 }

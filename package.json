@@ -26,7 +26,6 @@
   ],
   "author": "XadillaX",
   "license": "Private",
-  "available": "1d1edd1bb",
   "bin": {
     "gensokyo": "bin/gensokyo.js"
   },

@@ -77,7 +77,7 @@ walker.on("end", function() {
         description: projectName + " is yet another service.",
         main: "gensokyo.js",
         dependencies: {
-            gensokyo: "git+ssh://gitlab@gitlab.widget-inc.com:65422/huaban/gensokyo.git#" + pkg.available,
+            gensokyo: "git+ssh://gitlab@gitlab.widget-inc.com:65422/huaban/gensokyo.git#v" + pkg.version,
             nomnom: "~1.8.0"
         },
         keywords: ["gensokyo", "service"]

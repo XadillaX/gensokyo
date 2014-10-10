@@ -9,10 +9,10 @@
 Install `gensokyo` via npm:
 
 ```sh
-$ npm install -g git+ssh://gitlab@gitlab.widget-inc.com:65422/huaban/gensokyo.git#7e524a9
+$ npm install -g git+ssh://gitlab@gitlab.widget-inc.com:65422/huaban/gensokyo.git#1d1edd1bb
 ```
 
-> Current version: #[7e524a9](http://gitlab.widget-inc.com/huaban/gensokyo/tree/7e524a938b13a38f63e26417fa2d49390c3b0f64).
+> Current version: #[1d1edd1bb](http://gitlab.widget-inc.com/huaban/gensokyo/tree/1d1edd1bb741b297b0f151c7937db40b04a85cdd).
 
 ## Usage
 

@@ -128,3 +128,77 @@ EchoFilter.prototype.after2 = function(req, resp, next) {
 
 module.exports = EchoFilter;
 ```
+
+### Router
+
+#### Router Chain
+
+Each server router is a logic chain which is like:
+
+```text
+filter1 -> filter2 -> filter... -> logic1 -> logic2 -> logic... -> filter'1 -> filter'2 -> filter'...
+```
+
+When server received a message from client, a router chain will be triggered.
+
+The filters before logic are called **before-filter**s and the rests are **after-filter**s.
+
+The process can stop at any step and send the client back a message.
+
+If the process is finished and no any message sent back, Gensokyo will send the message which is dealed in `resp.message` automatically.
+
+#### Router Defination
+
+All the routers are defined in files named `*Router.js` which are under directory `router`.
+
+You should defined a JSON object contains `router name => router chain` key-value pair.
+
+> **Attention:** if your router filename is `fooRouter.js`, all the filter and logic function should in `fooController.js` and `fooFilter.js`.
+
+About the defination, refer to the code below:
+
+```javascript
+/**
+ * each router example:
+ *
+ *   + single controller
+ *     - foo : "bar"
+ *     - foo : [ "bar" ]
+ *     - foo : { ctrller: "bar" }
+ *
+ *   + multi controller
+ *     - foo : [ [ "bar1", "bar2" ] ]
+ *     - foo : { ctrller: [ "bar1", "bar2" ] }
+ *
+ *   + with single/multiple `before filter`
+ *     - foo : [ "before", "bar" ]                      ///< with only 2 elements in the array
+ *     - foo : [ "before", [ "bar1", "bar2" ] ]         ///< with only 2 elements in the array
+ *     - foo : [ [ "before1", "before2" ], [ "bar" ] ]  ///< with only 2 elements in the array
+ *     - foo : { before: "before", ctrller: "bar" }
+ *     - foo : { before: [ "before1", "before2" ], ctrller: "bar" }
+ *
+ *   + with single/multiple `after filter`
+ *     - foo : { ctrller: ..., after: [ ... ] }
+ *     - foo : { ctrller: ..., after: "bar" }
+ *
+ *   + with both `before` and `after` filters
+ *     - foo : [ "before", "bar", "after" ]             ///< must with 3 elements in the array
+ *     - foo : [ [ ... ], [ ... ], [ ... ] ]            ///< must with 3 elements in the array
+ *     - foo : { before: "before" / [ ... ], ctrller: "bar" / [ ... ], after: "after" / [ ... ]}
+ */
+```
+
+So here's an example of `echoRouter.js`:
+
+```javascript
+module.exports = {
+    echo1           : [ "before1", "echo2" ],
+    echo2           : [ "before1", [ "echo1", "echo2" ], "after1" ],
+    echo3           : "echo1",
+    echo4           : { before: [ "before1" ], ctrller: "echo1" }
+};
+```
+
+The code above said
+
+> When server received a router named `echo -> echo2` (`echoRouter.js` and `echo2 chain`), the server will trigger `echo2` chain, so the chain with `EchoFilter::before1`, `EchoController::echo1`, `EchoController::echo2` and `EchoFilter::after1` is triggered.

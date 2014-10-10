@@ -10,6 +10,7 @@ var Gensokyo = require("./lib/base/application");
 exports.Gensokyo = Gensokyo;
 exports.Controller = require("./lib/base/controller");
 exports.Filter = require("./lib/base/filter");
+exports.helper = require("./helper");
 
 /**
  * create a new server

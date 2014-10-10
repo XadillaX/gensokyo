@@ -1,5 +1,7 @@
 # Gensokyo [～東方幻想鄉～]
 
+![Gensokyo](gensokyo.jpg)
+
 花瓣网主站服务化核心框架模块。
 
 ## Installation
@@ -202,3 +204,97 @@ module.exports = {
 The code above said
 
 > When server received a router named `echo -> echo2` (`echoRouter.js` and `echo2 chain`), the server will trigger `echo2` chain, so the chain with `EchoFilter::before1`, `EchoController::echo1`, `EchoController::echo2` and `EchoFilter::after1` is triggered.
+
+### Incoming & Outcoming Message
+
+#### Incoming Message
+
+Incoming message usually appears in `function(req, resp, next)`.
+
+`req` is so-called incoming message.
+
+##### req.gensokyo
+
+The Gencokyo object.
+
+##### req.server
+
+The server object.
+
+##### req.router
+
+The router JSON object.
+
+##### req.param
+
+Incoming parameters are inside this value.
+
+##### req.socket
+
+The socket object.
+
+##### req.time
+
+Incoming time.
+
+##### req.routerString()
+
+Return a string like `"echo.echo1"`.
+
+#### Outcoming Message
+
+`resp` is so-called outcoming message.
+
+##### resp.gensokyo
+
+The Gensokyo object.
+
+##### resp.server
+
+The server object.
+
+##### resp.message
+
+You can store all the information you want to send to client in it.
+
+For example:
+
+```javascript
+resp.message.foo = "bar";
+resp.message.ok = false;
+```
+
+After calling `resp.send` manually or after the whole chain, this message will be send to client:
+
+```json
+{
+    "foo": "bar",
+    "ok": false
+}
+```
+
+##### resp.send()
+
+Send the stored message to client.
+
+If called once, it won't make any sense while calling again.
+
+##### resp.error()
+
+Send an error message to client.
+
+If called once, it won't make any sense while calling again.
+
+#### Helper
+
+```javascript
+var helper = require("gensokyo").helper;
+```
+
+##### Global
+
+###### helper.global.getModel(modelName)
+
+Get the model in `/model/<modelName>Model.js`.
+
+##### ... (Under Development)

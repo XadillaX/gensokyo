@@ -29,5 +29,15 @@
   "available": "3847280",
   "bin": {
     "gensokyo": "bin/gensokyo.js"
-  }
+  },
+  "files": [
+    "_template",
+    "bin",
+    "helper",
+    "lib",
+    ".gitignore",
+    "index.js",
+    "package.json",
+    "README.md"
+  ]
 }

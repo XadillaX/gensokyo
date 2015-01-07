@@ -12,7 +12,7 @@ Install `gensokyo` via npm:
 $ npm install -g git+ssh://gitlab@gitlab.widget-inc.com:65422/huaban/gensokyo.git#<VERSION>
 ```
 
-> Current version: [v0.0.2](http://gitlab.widget-inc.com/huaban/gensokyo/commits/v0.0.2).
+> Current version: [v0.0.3](http://gitlab.widget-inc.com/huaban/gensokyo/commits/v0.0.3).
 
 ## Usage
 

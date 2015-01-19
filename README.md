@@ -1,6 +1,6 @@
 # Gensokyo [～東方幻想鄉～]
 
-![Gensokyo](gensokyo.jpg)
+![Gensokyo](http://gitlab.widget-inc.com/huaban/gensokyo/raw/master/gensokyo.jpg)
 
 花瓣网主站服务化核心框架模块。
 
@@ -12,7 +12,7 @@ Install `gensokyo` via npm:
 $ npm install -g git+ssh://gitlab@gitlab.widget-inc.com:65422/huaban/gensokyo.git#<VERSION>
 ```
 
-> Current version: [v0.0.7](http://gitlab.widget-inc.com/huaban/gensokyo/commits/v0.0.7).
+> Current version: [v0.0.8](http://gitlab.widget-inc.com/huaban/gensokyo/commits/v0.0.8).
 
 or
 

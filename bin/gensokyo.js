@@ -77,8 +77,8 @@ walker.on("end", function() {
         description: projectName + " is yet another service.",
         main: "gensokyo.js",
         dependencies: {
-            gensokyo: "git+ssh://gitlab@gitlab.widget-inc.com:65422/huaban/gensokyo.git#v" + pkg.version,
-            nomnom: "~1.8.0"
+            gensokyo: "^" + pkg.version,
+            nomnom: "^1.8.0"
         },
         keywords: ["gensokyo", "service"]
     };
@@ -88,8 +88,11 @@ walker.on("end", function() {
     console.log("Installing dependencies...");
 
     var childProcess = require("child_process");
-    childProcess.exec("npm install", { cwd: process.cwd() + "/" + projectName + "/" }, function(err, stdout) {
+    childProcess.exec("npm install --registry=http://registry.npm.huaban.org", {
+        cwd: process.cwd() + "/" + projectName + "/"
+    }, function(err, stdout) {
         console.log(stdout);
         console.log(err ? err.message : "Done.");
     });
 });
+

@@ -1,6 +1,6 @@
 {
   "name": "gensokyo",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Gensokyo is the driver of services in HB.",
   "main": "index.js",
   "dependencies": {

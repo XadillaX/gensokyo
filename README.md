@@ -12,7 +12,7 @@ Install `gensokyo` via npm:
 $ npm install -g git+ssh://gitlab@gitlab.widget-inc.com:65422/huaban/gensokyo.git#<VERSION>
 ```
 
-> Current version: [v0.0.9](http://gitlab.widget-inc.com/huaban/gensokyo/commits/v0.0.9).
+> Current version: [v0.1.0](http://gitlab.widget-inc.com/huaban/gensokyo/commits/v0.1.0).
 
 or
 
@@ -56,6 +56,10 @@ Inside this directory, there are:
 ### Config
 
 `config` includes some configuration files. for example, you want to add a `config.foo.js` to system, you should add this file into `config` and add a new line in `index.js` to let others can access to it.
+
+If you want use a specified project path, use `rootPath` in parameter `options` while `Gensokyo.createServer`;
+
+Use `noZookeeper` in parameter `options` while you won't use zookeeper to manage your nodes.
 
 ### Controller
 

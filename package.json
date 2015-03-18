@@ -1,12 +1,12 @@
 {
   "name": "gensokyo",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "Gensokyo is the driver of services in HB.",
   "main": "index.js",
   "dependencies": {
     "async": "~0.9.0",
     "log4js": "~0.6.21",
-    "illyria": "~1.0.9",
+    "illyria": "~2.0.5",
     "sugar": "~1.4.1",
     "walk": "~2.3.9",
     "nomnom": "~1.8.1",

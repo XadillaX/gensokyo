@@ -1,7 +1,7 @@
 {
   "name": "gensokyo",
-  "version": "1.0.0",
-  "description": "Gensokyo is the driver of services in Huaban.",
+  "version": "1.0.1",
+  "description": "An RPC framework implemented in Node.js with https://github.com/XadillaX/illyria2 which is in use of Huaban.com.",
   "main": "index.js",
   "dependencies": {
     "async": "^0.9.0",

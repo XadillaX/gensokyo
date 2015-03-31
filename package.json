@@ -1,6 +1,6 @@
 {
   "name": "gensokyo",
-  "version": "0.1.3",
+  "version": "1.0.0",
   "description": "Gensokyo is the driver of services in Huaban.",
   "main": "index.js",
   "dependencies": {

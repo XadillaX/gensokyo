@@ -9,5 +9,7 @@ module.exports = {
     "defaultId" : "{{%project name lowercase%}}",
 
     logPath     : undefined,
-    logLevel    : "ALL"
+    logLevel    : "ALL",
+
+    aliasRule   : []
 };

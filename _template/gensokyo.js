@@ -13,7 +13,9 @@ var options = {
     zookeeper   : config.zookeeper,
 
     logPath     : config.server.logPath,
-    logLevel    : config.server.logLevel
+    logLevel    : config.server.logLevel,
+
+    aliasRule   : config.server.aliasRule
 };
 
 var opts = require("nomnom").option("id", {

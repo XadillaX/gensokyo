@@ -88,7 +88,7 @@ walker.on("end", function() {
     console.log("Installing dependencies...");
 
     var childProcess = require("child_process");
-    childProcess.exec("npm install --registry=http://registry.npm.huaban.org", {
+    childProcess.exec("npm install", {
         cwd: process.cwd() + "/" + projectName + "/"
     }, function(err, stdout) {
         console.log(stdout);

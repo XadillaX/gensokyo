@@ -9,15 +9,7 @@
 Install `gensokyo` via npm:
 
 ```sh
-$ npm install -g git+ssh://gitlab@gitlab.widget-inc.com:65422/huaban/gensokyo.git#<VERSION>
-```
-
-> Current version: [v0.1.3](http://gitlab.widget-inc.com/huaban/gensokyo/commits/v0.1.3).
-
-or
-
-```sh
-$ cnpm install -g gensokyo [--registry=http://registry.npm.huaban.org]
+$ npm install gensokyo --save
 ```
 
 ## Usage
@@ -60,6 +52,8 @@ Inside this directory, there are:
 If you want use a specified project path, use `rootPath` in parameter `options` while `Gensokyo.createServer`;
 
 Use `noZookeeper` in parameter `options` while you won't use zookeeper to manage your nodes.
+
+Use `aliasRules` if you need expose API with their alias names. (refer [here](https://github.com/XadillaX/illyria2/blame/0de8a8bfeb0f98b8508f10d0815a80924e8f020a/README.md#L58))
 
 ### Controller
 

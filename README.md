@@ -1,6 +1,6 @@
 # Gensokyo [～東方幻想鄉～]
 
-![Gensokyo](http://gitlab.widget-inc.com/huaban/gensokyo/raw/master/gensokyo.jpg)
+![Gensokyo](https://raw.githubusercontent.com/XadillaX/gensokyo/master/gensokyo.jpg)
 
 花瓣网主站服务化核心框架模块。
 

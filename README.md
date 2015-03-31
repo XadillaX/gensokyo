@@ -9,7 +9,7 @@
 Install `gensokyo` via npm:
 
 ```sh
-$ npm install gensokyo --save
+$ [sudo] npm install gensokyo -g
 ```
 
 ## Usage

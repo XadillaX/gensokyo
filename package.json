@@ -18,14 +18,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://gitlab@gitlab.widget-inc.com:65422/huaban/gensokyo.git"
+    "url": "git://github.com/XadillaX/gensokyo.git"
   },
   "keywords": [
     "gensokyo",
     "service"
   ],
   "author": "XadillaX",
-  "license": "Private",
+  "license": "MIT",
   "bin": {
     "gensokyo": "bin/gensokyo.js"
   },

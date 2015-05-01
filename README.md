@@ -2,7 +2,7 @@
 
 ![Gensokyo](https://raw.githubusercontent.com/XadillaX/gensokyo/master/gensokyo.jpg)
 
-花瓣网主站服务化核心框架模块。
+花瓣网主站服务化 & Project-Her 核心框架模块。
 
 ## Installation
 

@@ -1,6 +1,6 @@
 {
   "name": "gensokyo",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "An RPC framework implemented in Node.js with https://github.com/XadillaX/illyria2 which is in use of Huaban.com.",
   "main": "index.js",
   "dependencies": {
@@ -10,7 +10,7 @@
     "sugar": "^1.4.1",
     "walk": "^2.3.9",
     "nomnom": "^1.8.1",
-    "sync-runner": "^0.1.0"
+    "sync-runner": "^0.1.4"
   },
   "devDependencies": {},
   "scripts": {

@@ -4,5 +4,6 @@
  */
 module.exports = {
     server          : require("./config.server"),
-    zookeeper       : require("./config.zookeeper")
+    zookeeper       : require("./config.zookeeper"),
+    metric          : undefined
 };

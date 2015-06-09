@@ -49,11 +49,38 @@ Inside this directory, there are:
 
 `config` includes some configuration files. for example, you want to add a `config.foo.js` to system, you should add this file into `config` and add a new line in `index.js` to let others can access to it.
 
+#### rootPath
+
 If you want use a specified project path, use `rootPath` in parameter `options` while `Gensokyo.createServer`;
+
+#### noZookeeper
 
 Use `noZookeeper` in parameter `options` while you won't use zookeeper to manage your nodes.
 
+#### aliasRules
+
 Use `aliasRules` if you need expose API with their alias names. (refer [here](https://github.com/XadillaX/illyria2/blame/0de8a8bfeb0f98b8508f10d0815a80924e8f020a/README.md#L58))
+
+#### metric
+
+Use `metric` if you want to monit the metrics. It needs `reportPort` to open a web server to report metrics.
+
+##### riemann
+
+You can send metrics to Riemann intervally if you include `riemann` in `metric`.
+
+```json
+metric: {
+    reportPort: 3333,
+
+    riemann: {
+        port: 5555,
+        host: "10.0.17.179",
+        transport: "tcp",
+        sendInterval: 60000
+    }
+}
+```
 
 ### Controller
 

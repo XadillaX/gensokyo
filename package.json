@@ -5,8 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "async": "^1.2.1",
-    "illyria": "^2.1.1",
-    "log4js": "^0.6.21",
+    "illyria": "^2.1.7",
+    "log4js": "^0.6.26",
     "measured": "^1.0.0",
     "nomnom": "^1.8.1",
     "riemannjs": "^1.0.1",

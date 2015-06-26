@@ -1,5 +1,10 @@
 # Gensokyo [～東方幻想鄉～]
 
+[![Gensokyo](http://img.shields.io/npm/v/gensokyo.svg)](https://www.npmjs.org/package/gensokyo)
+[![Gensokyo](http://img.shields.io/npm/dm/gensokyo.svg)](https://www.npmjs.org/package/gensokyo)
+[![License](https://img.shields.io/npm/l/gensokyo.svg?style=flat)](https://www.npmjs.org/package/gensokyo)
+[![Dependency Status](https://david-dm.org/XadillaX/gensokyo.svg)](https://david-dm.org/XadillaX/gensokyo)
+
 ![Gensokyo](https://raw.githubusercontent.com/XadillaX/gensokyo/master/gensokyo.jpg)
 
 花瓣网主站服务化 & Project-Her 核心框架模块。

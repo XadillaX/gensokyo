@@ -7,7 +7,7 @@ var options = {
     host        : config.server.host,
     port        : config.server.port,
 
-    "class"     : config.server.class,
+    class       : config.server.class,
     id          : config.server.defaultId,
 
     zookeeper   : config.zookeeper,

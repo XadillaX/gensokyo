@@ -6,7 +6,7 @@
   "dependencies": {
     "async": "^1.2.1",
     "generic-pool": "^2.2.0",
-    "illyria": "^2.2.5",
+    "illyria": ">2.2.5 <2.3.0",
     "log4js": "^0.6.26",
     "measured": "^1.0.0",
     "nomnom": "^1.8.1",

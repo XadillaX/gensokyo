@@ -4,7 +4,7 @@
   "description": "An RPC framework implemented in Node.js with https://github.com/XadillaX/illyria2 which is in use of Huaban.com.",
   "main": "index.js",
   "dependencies": {
-    "async": "^1.2.1",
+    "async": "^3.2.2",
     "generic-pool": "^2.2.0",
     "illyria": ">2.2.5 <2.3.0",
     "log4js": "^0.6.26",
